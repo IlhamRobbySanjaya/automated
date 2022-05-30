@@ -1,0 +1,364 @@
+import py
+from selenium.webdriver.common.keys import Keys
+from selenium import webdriver
+from selenium.webdriver.support.ui import Select
+import pyautogui
+import time
+from selenium.webdriver.common.action_chains import ActionChains
+
+driver = webdriver.Chrome()
+driver.maximize_window()
+driver.implicitly_wait(10)
+
+driver.get('https://smanegeri1babatlmg.sch.id/')
+
+driver.find_element_by_xpath(
+    '//*[@id="moove_gdpr_cookie_info_bar"]/div/div/div[2]/button').click()
+time.sleep(2)
+driver.find_element_by_xpath(
+    '//*[@id="post-2298"]/div/div[2]/div/div/div/div/div[2]/div/div/div/div/div/div/div[2]/a'
+).click()
+time.sleep(2)
+driver.switch_to_window(driver.window_handles[0])
+time.sleep(3)
+driver.find_element_by_xpath(
+    '//*[@id="post-2298"]/div/div[6]/div[1]/div/div/div/div/div[1]/ul/li[2]/a'
+).click()
+time.sleep(2)
+driver.find_element_by_xpath(
+    '//*[@id="post-2298"]/div/div[6]/div[1]/div/div/div/div/div[1]/ul/li[3]/a'
+).click()
+time.sleep(2)
+driver.find_element_by_xpath(
+    '//*[@id="post-2298"]/div/div[6]/div[1]/div/div/div/div/div[1]/ul/li[4]/a'
+).click()
+time.sleep(2)
+driver.find_element_by_xpath(
+    '//*[@id="post-2298"]/div/div[6]/div[1]/div/div/div/div/div[1]/ul/li[1]/a'
+).click()
+time.sleep(2)
+driver.find_element_by_link_text('JADWAL SEMESTER GENAP 2021-2022').click()
+time.sleep(4)
+driver.find_element_by_class_name('pdfemb-next').click()
+time.sleep(2)
+driver.find_element_by_class_name('pdfemb-next').click()
+time.sleep(2)
+driver.find_element_by_class_name('pdfemb-next').click()
+time.sleep(2)
+driver.find_element_by_class_name('pdfemb-next').click()
+time.sleep(2)
+driver.find_element_by_class_name('pdfemb-prev').click()
+time.sleep(2)
+driver.find_element_by_class_name('pdfemb-prev').click()
+time.sleep(2)
+driver.find_element_by_class_name('pdfemb-prev').click()
+time.sleep(2)
+driver.find_element_by_link_text('JUKNIS PPDB JATIM 2022').click()
+time.sleep(2)
+driver.find_element_by_link_text('PPDB 2022 – KADISDIK JATIM').click()
+time.sleep(2)
+driver.find_element_by_link_text(
+    'PENERIMAAN PESERTA DIDIK BARU SMA NEGERI 1 BABAT TAHUN 2022 DIBUKA'
+).click()
+time.sleep(2)
+driver.find_element_by_link_text('Home').click()
+time.sleep(4)
+driver.find_element_by_xpath('//*[@id="slider-1-slide-3-layer-7"]/a').click()
+time.sleep(2)
+driver.find_element_by_link_text('JADWAL SEMESTER GENAP 2021-2022').click()
+time.sleep(2)
+driver.find_element_by_link_text('News').click()
+time.sleep(2)
+driver.find_element_by_link_text('JUKNIS PPDB JATIM 2022').click()
+time.sleep(2)
+driver.find_element_by_link_text('News').click()
+time.sleep(2)
+driver.find_element_by_link_text('PPDB 2022 – KADISDIK JATIM').click()
+time.sleep(2)
+driver.find_element_by_link_text('News').click()
+time.sleep(2)
+driver.find_element_by_link_text(
+    'PENERIMAAN PESERTA DIDIK BARU SMA NEGERI 1 BABAT TAHUN 2022 DIBUKA'
+).click()
+time.sleep(2)
+driver.find_element_by_link_text('News').click()
+time.sleep(2)
+driver.find_element_by_link_text('Home').click()
+time.sleep(2)
+driver.find_element_by_link_text('Baca selengkapnya>>').click()
+time.sleep(2)
+driver.find_element_by_link_text('Home').click()
+time.sleep(2)
+ActionChains(driver).move_to_element(
+    (driver.find_element_by_link_text('Profil'))).perform()
+time.sleep(2)
+driver.find_element_by_link_text('SEJARAH SMAN 1 BABAT').click()
+time.sleep(2)
+ActionChains(driver).move_to_element(
+    (driver.find_element_by_link_text('Profil'))).perform()
+time.sleep(2)
+driver.find_element_by_link_text('VISI DAN MISI').click()
+time.sleep(2)
+ActionChains(driver).move_to_element(
+    (driver.find_element_by_link_text('Profil'))).perform()
+time.sleep(2)
+driver.find_element_by_link_text(
+    'STRUKTUR ORGANISASI SMA NEGERI 1 BABAT').click()
+time.sleep(2)
+ActionChains(driver).move_to_element(
+    (driver.find_element_by_link_text('Profil'))).perform()
+time.sleep(2)
+driver.find_element_by_link_text('PROFIL KEPALA SEKOLAH').click()
+time.sleep(2)
+ActionChains(driver).move_to_element(
+    (driver.find_element_by_link_text('Profil'))).perform()
+time.sleep(2)
+driver.find_element_by_link_text('GURU DAN STAFF TU').click()
+time.sleep(2)
+driver.find_element_by_xpath(
+    '//*[@id="1650590359348-cef10f14-cc9a"]/div[2]/div/div/div[1]/div[1]/a'
+).click()
+time.sleep(2)
+driver.find_element_by_link_text('Kembali').click()
+time.sleep(2)
+driver.find_element_by_xpath(
+    '//*[@id="1650590359348-cef10f14-cc9a"]/div[2]/div/div/div[5]/div[1]/a'
+).click()
+time.sleep(2)
+driver.find_element_by_link_text('Kembali').click()
+time.sleep(2)
+driver.find_element_by_xpath(
+    '//*[@id="1650590359348-cef10f14-cc9a"]/div[2]/div/div/div[9]/div[1]/a'
+).click()
+time.sleep(2)
+driver.find_element_by_link_text('Kembali').click()
+time.sleep(2)
+driver.find_element_by_xpath(
+    '//*[@id="1650590359348-cef10f14-cc9a"]/div[2]/div/div/div[17]/div[1]/a'
+).click()
+time.sleep(2)
+driver.find_element_by_link_text('Kembali').click()
+time.sleep(2)
+driver.find_element_by_xpath(
+    '//*[@id="1650590359348-cef10f14-cc9a"]/div[2]/div/div/div[33]/div[1]/a'
+).click()
+time.sleep(2)
+driver.find_element_by_link_text('Kembali').click()
+time.sleep(2)
+driver.find_element_by_xpath(
+    '//*[@id="1650590359348-cef10f14-cc9a"]/div[2]/div/div/div[69]/div[1]/a'
+).click()
+time.sleep(2)
+driver.find_element_by_link_text('Kembali').click()
+time.sleep(2)
+driver.find_element_by_xpath(
+    '//*[@id="post-627"]/div/div[2]/div/div/div/div/div/div[1]/ul/li[2]/a'
+).click()
+time.sleep(2)
+driver.find_element_by_xpath(
+    '//*[@id="1650590359364-d7e60506-b0ae"]/div[2]/div/div/div[1]/div[1]/a'
+).click()
+time.sleep(2)
+driver.find_element_by_link_text('Kembali').click()
+time.sleep(2)
+driver.find_element_by_xpath(
+    '//*[@id="post-627"]/div/div[2]/div/div/div/div/div/div[1]/ul/li[2]/a'
+).click()
+time.sleep(2)
+driver.find_element_by_xpath(
+    '//*[@id="1650590359364-d7e60506-b0ae"]/div[2]/div/div/div[8]/div[1]/a'
+).click()
+time.sleep(2)
+driver.find_element_by_link_text('Kembali').click()
+time.sleep(2)
+driver.find_element_by_xpath(
+    '//*[@id="post-627"]/div/div[2]/div/div/div/div/div/div[1]/ul/li[2]/a'
+).click()
+time.sleep(2)
+driver.find_element_by_xpath(
+    '//*[@id="1650590359364-d7e60506-b0ae"]/div[2]/div/div/div[18]/div[1]/a'
+).click()
+time.sleep(2)
+driver.find_element_by_link_text('Kembali').click()
+time.sleep(2)
+ActionChains(driver).move_to_element(
+    (driver.find_element_by_link_text('Profil'))).perform()
+time.sleep(2)
+driver.find_element_by_link_text('MARS DAN HYMNE SMABA').click()
+time.sleep(2)
+driver.find_element_by_xpath(
+    '//*[@id="mep_0"]/div/div[3]/div[1]/button').click()
+time.sleep(2)
+driver.find_element_by_xpath(
+    '//*[@id="mep_0"]/div/div[3]/div[1]/button').click()
+time.sleep(2)
+driver.find_element_by_link_text('HYMNE SMABA').click()
+time.sleep(2)
+driver.find_element_by_xpath(
+    '//*[@id="mep_1"]/div/div[3]/div[1]/button').click()
+time.sleep(2)
+driver.find_element_by_xpath(
+    '//*[@id="mep_1"]/div/div[3]/div[1]/button').click()
+time.sleep(2)
+ActionChains(driver).move_to_element(
+    (driver.find_element_by_link_text('Kesiswaan'))).perform()
+time.sleep(2)
+driver.find_element_by_link_text('FUNGSIONARIS OSIS').click()
+time.sleep(2)
+ActionChains(driver).move_to_element(
+    (driver.find_element_by_link_text('Kesiswaan'))).perform()
+time.sleep(2)
+driver.find_element_by_link_text('EKSTRAKURIKULER SMA NEGERI 1 BABAT').click()
+time.sleep(2)
+ActionChains(driver).move_to_element(
+    (driver.find_element_by_link_text('Kesiswaan'))).perform()
+time.sleep(2)
+driver.find_element_by_link_text('PRESTASI SISWA').click()
+time.sleep(2)
+ActionChains(driver).move_to_element(
+    (driver.find_element_by_link_text('Links'))).perform()
+time.sleep(2)
+driver.find_element_by_link_text('E-LEARNING').click()
+time.sleep(10)
+driver.switch_to_window(driver.window_handles[0])
+time.sleep(2)
+ActionChains(driver).move_to_element(
+    (driver.find_element_by_link_text('Links'))).perform()
+time.sleep(2)
+driver.find_element_by_link_text('E-PERPUS').click()
+time.sleep(10)
+driver.switch_to_window(driver.window_handles[0])
+time.sleep(2)
+ActionChains(driver).move_to_element(
+    (driver.find_element_by_link_text('Links'))).perform()
+time.sleep(2)
+driver.find_element_by_link_text('PHB-BKS').click()
+time.sleep(10)
+driver.switch_to_window(driver.window_handles[0])
+time.sleep(2)
+ActionChains(driver).move_to_element(
+    (driver.find_element_by_link_text('Links'))).perform()
+time.sleep(2)
+driver.find_element_by_link_text('PAT-BKS').click()
+time.sleep(10)
+driver.switch_to_window(driver.window_handles[0])
+time.sleep(2)
+ActionChains(driver).move_to_element(
+    (driver.find_element_by_link_text('Links'))).perform()
+time.sleep(2)
+driver.find_element_by_link_text('PERGURUAN TINGGI').click()
+time.sleep(2)
+driver.switch_to_window(driver.window_handles[0])
+driver.switch_to_window(driver.window_handles[5])
+time.sleep(2)
+driver.find_element_by_xpath(
+    '/html/body/div[1]/div[3]/div/main/article/div/div/div/div/div/div/div/div[1]/ul/li[2]/a'
+).click()
+time.sleep(2)
+driver.find_element_by_xpath(
+    '//*[@id="post-2674"]/div/div/div/div/div/div/div/div[1]/ul/li[3]/a'
+).click()
+time.sleep(2)
+driver.switch_to_window(driver.window_handles[0])
+time.sleep(2)
+ActionChains(driver).move_to_element(
+    (driver.find_element_by_link_text('Links'))).perform()
+time.sleep(2)
+driver.find_element_by_link_text('YOUTUBE OFFICIAL').click()
+time.sleep(10)
+driver.switch_to_window(driver.window_handles[0])
+time.sleep(2)
+driver.switch_to_window(driver.window_handles[1])
+time.sleep(2)
+driver.close()
+time.sleep(2)
+driver.switch_to_window(driver.window_handles[1])
+time.sleep(2)
+driver.close()
+time.sleep(2)
+driver.switch_to_window(driver.window_handles[1])
+time.sleep(2)
+driver.close()
+time.sleep(2)
+driver.switch_to_window(driver.window_handles[1])
+time.sleep(2)
+driver.close()
+time.sleep(2)
+driver.switch_to_window(driver.window_handles[1])
+time.sleep(2)
+driver.close()
+time.sleep(2)
+driver.switch_to_window(driver.window_handles[1])
+time.sleep(2)
+driver.close()
+time.sleep(2)
+ActionChains(driver).move_to_element(
+    (driver.find_element_by_link_text('Informasi'))).perform()
+time.sleep(2)
+driver.find_element_by_link_text('JADWAL PELAJARAN').click()
+time.sleep(10)
+driver.switch_to_window(driver.window_handles[0])
+time.sleep(2)
+ActionChains(driver).move_to_element(
+    (driver.find_element_by_link_text('Informasi'))).perform()
+time.sleep(2)
+driver.find_element_by_link_text('AGENDA').click()
+time.sleep(2)
+driver.switch_to_window(driver.window_handles[0])
+driver.switch_to_window(driver.window_handles[2])
+time.sleep(2)
+driver.find_element_by_xpath(
+    '//*[@id="post-923"]/div/div/div/div/div/div[2]/div[1]/div[1]/div/div/div[2]/div[2]/h5/a'
+).click()
+time.sleep(2)
+driver.back()
+driver.find_element_by_xpath(
+    '//*[@id="post-923"]/div/div/div/div/div/div[2]/div[1]/div[2]/div/div/div[2]/div[2]/h5/a'
+).click()
+time.sleep(2)
+driver.back()
+driver.find_element_by_xpath(
+    '//*[@id="post-923"]/div/div/div/div/div/div[2]/div[1]/div[3]/div/div/div[2]/div[2]/h5/a'
+).click()
+time.sleep(2)
+driver.back()
+time.sleep(2)
+driver.find_element_by_xpath(
+    '//*[@id="post-923"]/div/div/div/div/div/div[2]/div[1]/div[4]/div/div/div[2]/div[2]/h5/a'
+).click()
+time.sleep(2)
+driver.back()
+driver.switch_to_window(driver.window_handles[0])
+time.sleep(2)
+ActionChains(driver).move_to_element(
+    (driver.find_element_by_link_text('Informasi'))).perform()
+time.sleep(2)
+driver.find_element_by_link_text('PENGUMUMAN').click()
+time.sleep(10)
+driver.switch_to_window(driver.window_handles[0])
+time.sleep(2)
+driver.find_element_by_link_text('PPDB').click()
+time.sleep(5)
+driver.switch_to_window(driver.window_handles[0])
+time.sleep(2)
+driver.find_element_by_link_text('News').click()
+time.sleep(2)
+driver.back()
+time.sleep(2)
+driver.switch_to_window(driver.window_handles[1])
+time.sleep(2)
+driver.close()
+time.sleep(2)
+driver.switch_to_window(driver.window_handles[1])
+time.sleep(2)
+driver.close()
+time.sleep(2)
+driver.switch_to_window(driver.window_handles[1])
+time.sleep(2)
+driver.close()
+time.sleep(2)
+driver.switch_to_window(driver.window_handles[1])
+time.sleep(2)
+driver.close()
+time.sleep(2)
+driver.quit()
